@@ -2,3 +2,5 @@
 - https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=432s
 
 - https://github.com/bradtraversy/react-crash-2021
+
+- Up to 57 mins, Sun 24 Jan 2021
