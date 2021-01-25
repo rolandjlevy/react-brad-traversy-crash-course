@@ -4,3 +4,5 @@
 - https://github.com/bradtraversy/react-crash-2021
 
 - Up to 57 mins, Sun 24 Jan 2021
+
+- After the course, do this tutorial: https://www.freecodecamp.org/news/react-movie-app-tutorial/
