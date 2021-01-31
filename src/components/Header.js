@@ -12,7 +12,8 @@ const Header = ({title}) => {
       <Button 
         color='green' 
         text='Add'
-        onClick={onClick} />
+        onClick={onClick} 
+      />
     </header>
   )
 }

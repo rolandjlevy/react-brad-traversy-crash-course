@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 
@@ -9,7 +10,7 @@ const App = () => {
       id: 1,
       text: 'Dentist Appointment',
       day: '1 Feb 2021',
-      reminder: false
+      reminder: true
     },
     {
       id: 2,
