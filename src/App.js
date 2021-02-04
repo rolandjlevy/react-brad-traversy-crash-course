@@ -4,7 +4,7 @@ import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
 
 const App = () => {
-  // eslint-disable-next-line
+
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -32,7 +32,15 @@ const App = () => {
     }
   ]);
 
-  // Function to delete tasks
+  const [count, setId] = useState(tasks.length + 1)
+
+  const addTask = (task) => {
+    setId(count + 1);
+    setTasks(
+      [...tasks, { ...task, id:count } ]
+    );
+  }
+
   const deleteTask = (id) => {
     setTasks(
       tasks.filter(task => task.id !== id)
@@ -49,7 +57,7 @@ const App = () => {
   return (
     <div className="container">
       <Header title="Task Tracker" />
-      <AddTask />
+      <AddTask onAdd={addTask}/>
       {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />) : ('No tasks')}
     </div>
   )
